@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>E-commerce product page</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="rootcontainer">
+      <nav>
+        <img
+          src="/images/icon-menu.svg"
+          alt="Menu-Responsive"
+          class="res-menu-icon"
+          id="menu-icon"
+        />
+        <div class="spacing"></div>
+        <h3 class="title">sneakers</h3>
+        <div
+          class="actual-menu"
+          aria-label="navigationLinks"
+          id="navigation-link-holder"
+        >
+          <div>
+            <img
+              src="/images/icon-close.svg"
+              alt="Close Menu"
+              id="menu-close-btn"
+            />
+            <p>Collections</p>
+            <p>Men</p>
+            <p>Women</p>
+            <p>About</p>
+            <p>Contact</p>
+          </div>
+        </div>
+        <div class="right-wrapper">
+          <img src="/images/icon-cart.svg" alt="Open Cart" />
+
+          <div class="spacing"></div>
+          <img
+            src="/images/image-avatar.png"
+            alt="Profile-Icon"
+            class="profileicon"
+          />
+        </div>
+      </nav>
+      <div class="body-container">
+        <div class="carousel">
+          <div class="carousel-banner" id="carousel-window">
+            <div class="carousel-window" id="carousel-container">
+              <img src="/images/image-product-1.jpg" />
+              <img src="/images/image-product-2.jpg" />
+              <img src="/images/image-product-3.jpg" />
+              <img src="/images/image-product-4.jpg" />
+            </div>
+            <div class="carousel-arrow-container">
+              <img
+                src="/images/icon-previous.svg"
+                class="carousel-arrow"
+                id="previous-arrow"
+              />
+              <img
+                src="/images/icon-next.svg"
+                class="carousel-arrow"
+                id="next-arrow"
+              />
+            </div>
+          </div>
+          <div class="carousel-min-pics" id="carousel-min-pics">
+            <img src="/images/image-product-1-thumbnail.jpg" data-image="1" />
+            <img src="/images/image-product-2-thumbnail.jpg" data-image="2" />
+            <img src="/images/image-product-3-thumbnail.jpg" data-image="3" />
+            <img src="/images/image-product-4-thumbnail.jpg" data-image="4" />
+          </div>
+        </div>
+        <div class="carousel-thumbnail-holder"></div>
+
+        <div class="product-details-container">
+          <p class="product-company">SNEAKER COMPANY</p>
+          <p class="product-title">Fall Limited Edition Sneakers</p>
+          <p class="product-desc">
+            These low-profile sneakers are your perfect casual wear companion.
+            Featuring a durable rubber outer sole, they'll withstand everything
+            weather can offer.
+          </p>
+          <div class="product-price-container">
+            <p class="product-price">$125.00</p>
+            <p class="product-discount">50%</p>
+            <p class="product-original-price">$250.00</p>
+          </div>
+
+          <div class="btn counter-btn">
+            <img
+              src="/images/icon-minus.svg"
+              id="counter-minus"
+              alt="Reduce count"
+            />
+            <p id="count">0</p>
+            <img
+              src="/images/icon-plus.svg"
+              id="counter-add"
+              alt="Increase count"
+            />
+          </div>
+
+          <div class="btn cart-btn">
+            <img src="/images/icon-cart.svg" alt="Add to Cart" />
+            <p>Add to Cart</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by Vedant Gandhi.
+    </div>
+    <script src="/carousel.js" defer></script>
+    <script src="/menu.js" defer></script>
+  </body>
+</html>
